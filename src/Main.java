@@ -33,7 +33,7 @@ public class Main {
         try (FileOutputStream fos = new FileOutputStream(path);
              ObjectOutputStream oos = new ObjectOutputStream(fos)) {
             // запишем экземпляр класса в файл
-            oos.writeObject(fos);
+            oos.writeObject(gameProgress);
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
